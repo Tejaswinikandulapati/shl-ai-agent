@@ -1,0 +1,33 @@
+import json
+
+catalog = [
+    {
+        "name": "Java 8 (New)",
+        "url": "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
+        "description": "Measures Java programming skills.",
+        "test_type": "Knowledge",
+        "skills": ["Java", "Programming", "Backend"],
+        "job_roles": ["Java Developer", "Backend Engineer"]
+    },
+    {
+        "name": "OPQ32r",
+        "url": "https://www.shl.com/solutions/products/product-catalog/view/opq32r/",
+        "description": "Measures workplace personality and behavioral style.",
+        "test_type": "Personality",
+        "skills": ["Personality", "Behavior"],
+        "job_roles": ["All"]
+    },
+    {
+        "name": "General Ability Test",
+        "url": "https://www.shl.com/solutions/products/product-catalog/view/general-ability-test/",
+        "description": "Measures reasoning and cognitive ability.",
+        "test_type": "Cognitive",
+        "skills": ["Reasoning", "Problem Solving"],
+        "job_roles": ["All"]
+    }
+]
+
+with open("app/data/shl_catalog.json", "w") as f:
+    json.dump(catalog, f, indent=2)
+
+print("Catalog created")
