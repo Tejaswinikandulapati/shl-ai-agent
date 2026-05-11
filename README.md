@@ -1,7 +1,5 @@
 # SHL Conversational Assessment Recommender
 
-# SHL Conversational Assessment Recommender
-
 AI-powered conversational recommendation system for SHL assessments using FastAPI.
 
 ## Features
